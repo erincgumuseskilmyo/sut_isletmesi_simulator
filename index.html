@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HTML'in kendisi onbellege takilmasin: js/css dosyalari zaten ?v= damgali,
+     ama eski bir index.html yeni dosyalari hic cagirmaz. -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>LVS 2005 – Süt Sığırı İşletmesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Fredoka (yuvarlak, sicak baslik) + Nunito (yumusak govde) + Space Mono (veri).
+     Ucunun de Turkce karakter destegi (latin-ext) vardir. -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=202609271250">
+</head>
+<body>
+
+<div id="app"></div>
+
+<!-- Modal katmanı: hayvan detay, tohumlama/doğum mini oyunları -->
+<div id="modalRoot" class="modal-root hidden"></div>
+
+<!-- Uygulama modülleri (bağımlılık sırasına göre) -->
+<script src="js/config.js?v=202609271250"></script>
+<script src="js/animals.js?v=202609271250"></script>
+<script src="js/ration.js?v=202609271250"></script>
+<script src="js/reproduction.js?v=202609271250"></script>
+<script src="js/health.js?v=202609271250"></script>
+<script src="js/insemination.js?v=202609271250"></script>
+<script src="js/calving.js?v=202609271250"></script>
+<script src="js/economy.js?v=202609271250"></script>
+<script src="js/scoring.js?v=202609271250"></script>
+<script src="js/storage.js?v=202609271250"></script>
+<script src="js/csv.js?v=202609271250"></script>
+<script src="js/sheets.js?v=202609271250"></script>
+<script src="js/game.js?v=202609271250"></script>
+<script src="js/sfx.js?v=202609271250"></script>
+<script src="js/ui.js?v=202609271250"></script>
+<script src="js/intro.js?v=202609271250"></script>
+<script src="js/main.js?v=202609271250"></script>
+
+<!-- Izometrik 3B cirtlik katmani (ES modulu; oyun mantigini degistirmez,
+     yalnizca Game.state'i okuyup sahnede gosterir). -->
+<script type="module" src="js/iso/farm3d.js?v=202609271250"></script>
+</body>
+</html>
